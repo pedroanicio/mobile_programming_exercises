@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">jokenpo</string>
+    <string name="tesoura">tesoura</string>
+    <string name="pedra">pedra</string>
+    <string name="papel">papel</string>
+</resources>
