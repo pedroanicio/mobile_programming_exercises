@@ -5,65 +5,69 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/welcome_back"
+        android:textColor="#FC3F65"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:textColor="#FC3F65"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintVertical_bias="0.30"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.30" />
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="236dp"
         android:layout_height="72dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintVertical_bias="0.10"
         app:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/emailInput"
         android:layout_width="340dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="@string/email_phone_number"
+        android:layout_height="48dp"
+        android:autofillHints=""
         android:drawableStart="@drawable/icons8_enviar_24"
         android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/email_phone_number"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintVertical_bias="0.38"
         tools:ignore="TextFields" />
 
     <EditText
         android:id="@+id/passwordInput"
         android:layout_width="340dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:hint="@string/password"
+        android:layout_height="48dp"
+        android:autofillHints=""
         android:drawableStart="@drawable/lock"
         android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintVertical_bias="0.49"
         tools:ignore="TextFields" />
 
@@ -71,8 +75,8 @@
         android:id="@+id/rememberMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:buttonTint="#FC3F65"
         android:backgroundTint="#FC3F65"
+        android:buttonTint="#FC3F65"
         android:text="@string/remember_me"
         android:textColor="#FC3F65"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -86,17 +90,17 @@
         android:id="@+id/forgotPassword"
         android:layout_width="157dp"
         android:layout_height="wrap_content"
-        android:text="@string/forgot_password"
-        android:textSize="13sp"
+        android:background="#0000"
         android:padding="8dp"
+        android:text="@string/forgot_password"
         android:textColor="#FC3F65"
-        android:background=""
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintVertical_bias="0.58"/>
+        app:layout_constraintVertical_bias="0.58" />
 
 
     <Button
@@ -108,10 +112,11 @@
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintVertical_bias="0.7"
+        tools:ignore="VisualLintButtonSize" />
 
     <TextView
         android:id="@+id/textView"
@@ -120,55 +125,55 @@
         android:text="@string/or_login_with"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintVertical_bias="0.78"/>
+        app:layout_constraintVertical_bias="0.78" />
 
     <ImageButton
         android:id="@+id/loginWithInstagram"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:contentDescription="TODO"
-        app:srcCompat="@drawable/instagram"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:background="@null"
+        android:contentDescription="@string/todo"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintVertical_bias="0.88"/>
+        app:layout_constraintVertical_bias="0.88"
+        app:srcCompat="@drawable/instagram" />
 
     <ImageButton
         android:id="@+id/loginWithFacebook"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:contentDescription="TODO"
-        app:srcCompat="@drawable/facebook"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:background="@null"
+        android:contentDescription="@string/todo"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintVertical_bias="0.88"/>
+        app:layout_constraintVertical_bias="0.88"
+        app:srcCompat="@drawable/facebook" />
 
     <ImageButton
         android:id="@+id/loginWithLinkedin"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:contentDescription="TODO"
-        app:srcCompat="@drawable/linkedin"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:background="@null"
+        android:contentDescription="@string/todo"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
-        app:layout_constraintVertical_bias="0.88"/>
+        app:layout_constraintVertical_bias="0.88"
+        app:srcCompat="@drawable/linkedin" />
 
     <TextView
         android:id="@+id/textView2"
@@ -177,25 +182,26 @@
         android:text="@string/don_t_have_account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintVertical_bias="0.95"/>
+        app:layout_constraintVertical_bias="0.95" />
 
     <Button
         android:id="@+id/signUp"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:text="@string/sign_up"
-        android:textSize="13sp"
+        android:background="#0000"
         android:padding="8dp"
+        android:text="@string/sign_up"
         android:textColor="#FC3F65"
-        android:background=""
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.68"
-        app:layout_constraintVertical_bias="0.977"/>
+        app:layout_constraintVertical_bias="0.977"
+        tools:ignore="TextSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
