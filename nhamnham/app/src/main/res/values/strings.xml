@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NhamNham</string>
+    <string name="rules">1. O jogo é jogado em um tabuleiro 3x3.\n\n2. Dois jogadores alternam turnos para posicionar peças de tamanhos diferentes.\n\n3. Uma peça maior pode encobrir uma menor na mesma célula.\n\n4. O objetivo é alinhar três peças do mesmo jogador na horizontal, vertical ou diagonal.\n\n5. Se o tabuleiro encher sem vencedor, o jogo termina em empate.</string>
+    <string name="voltar">Voltar</string>
+    <string name="title">Regras do Jogo Nham Nham</string>
+    <string name="playerTurn">Vez do Jogador 1</string>
+    <string name="mainTitle">Nham Nham</string>
+    <string name="startGame">Iniciar Jogo</string>
+    <string name="rulesBtn">Regras</string>
+    <string name="reiniciar">Reiniciar</string>
+</resources>

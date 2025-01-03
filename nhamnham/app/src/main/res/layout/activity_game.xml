@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Indicação do Jogador Atual -->
+    <TextView
+        android:id="@+id/txtCurrentPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vez do Jogador 1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tabuleiro 3x3 -->
+    <GridLayout
+        android:id="@+id/gridBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <!-- Células do Tabuleiro -->
+        <ImageView
+            android:id="@+id/cell00"
+            style="@style/BoardCellStyle" />
+
+        <ImageView
+            android:id="@+id/cell01"
+            style="@style/BoardCellStyle" />
+        <ImageView
+            android:id="@+id/cell02"
+            style="@style/BoardCellStyle" />
+
+        <ImageView
+            android:id="@+id/cell10"
+            style="@style/BoardCellStyle" />
+        <ImageView
+            android:id="@+id/cell11"
+            style="@style/BoardCellStyle" />
+        <ImageView
+            android:id="@+id/cell12"
+            style="@style/BoardCellStyle" />
+
+        <ImageView
+            android:id="@+id/cell20"
+            style="@style/BoardCellStyle" />
+        <ImageView
+            android:id="@+id/cell21"
+            style="@style/BoardCellStyle" />
+        <ImageView
+            android:id="@+id/cell22"
+            style="@style/BoardCellStyle" />
+
+    </GridLayout>
+
+
+    <Spinner
+        android:id="@+id/spinnerPieceSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp"
+        android:text="@string/reiniciar" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/voltar" />
+
+
+
+
+</LinearLayout>
